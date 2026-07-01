@@ -176,6 +176,13 @@ body {
     color: rgba(13, 13, 13, 0.5);
 }
 
+.grid-bg{
+    background-image:
+        linear-gradient(to right, rgba(13, 13, 13, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(13, 13, 13, 0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+}
+
 .section{
     padding: 2.5rem 2rem;
     border-top: 2px solid var(--pitch);
