@@ -6,3 +6,63 @@
   --signal-dark: #C44D00;
   --font-mono:   "Space Mono", "JetBrains Mono", "Fira Code", "Courier New", monospace;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bone);
+  color: var(--pitch);
+  font-family: var(--font-mono);
+}
+
+#main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--bone);
+    font-family: var(--font-mono);
+    border-bottom: 1px solid rgba(13, 13, 13, 0.06);
+}
+
+.nav-inside{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: var(--pitch);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-logo:hover{
+    color: var(--signal);
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a{
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: rgba(13, 13, 13, 0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover{
+    color: var(--signal);
+}
