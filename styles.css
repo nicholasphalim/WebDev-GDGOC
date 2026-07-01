@@ -88,7 +88,7 @@ body {
 }
 
 .hero-name{
-    font-size: 7vw;
+    font-size: 7rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -176,3 +176,52 @@ body {
     color: rgba(13, 13, 13, 0.5);
 }
 
+.section{
+    padding: 2.5rem 2rem;
+    border-top: 2px solid var(--pitch);
+
+}
+
+.section-div{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section-header{
+    display: flex;
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-number{
+    color: var(--signal);
+}
+
+.section-bar{
+    width: 2rem;
+    height: 1.5px;
+    background-color: var(--signal);
+}
+
+.section-title{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--pitch);
+    margin-bottom: 0.5rem;
+}
+
+.section-line{
+    flex: 1;
+    height: 1px;
+    background-color: rgba(13, 13, 13, 0.2);
+}
+
+.section-subtitle{
+    font-size: 0.75rem;
+    letter-spacing: 0.5em;
+    color: rgba(13, 13, 13, 0.25);
+    margin-bottom: 4rem;
+}
