@@ -66,3 +66,113 @@ body {
 .nav-links a:hover{
     color: var(--signal);
 }
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 7rem 3rem;
+}
+
+.hero-content{
+  max-width: 1100px;
+  width: 100%;
+}
+
+.label{
+    font-size: 0.75rem;
+    color: var(--signal);
+    letter-spacing: 0.35em;
+    margin-bottom: 3.5 rem;
+}
+
+.hero-name{
+    font-size: 7vw;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--pitch);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.accent{
+    color: var(--signal);
+}
+
+.hero-description{
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    color: rgba(13, 13, 13, 0.7);
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button{
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 1rem 4rem;
+    border: 2px solid;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.button1{
+    color: var(--bone);
+    background-color: var(--signal);
+    border-color: var(--signal);
+}
+
+.button1:hover{
+    color: var(--signal);
+    background-color: var(--bone);
+}
+
+.button2{
+    color: var(--pitch);
+    background-color: var(--transparent);
+    border-color: var(--pitch);
+}
+
+.button2:hover{
+    color: var(--bone);
+    background-color: var(--pitch);
+}
+
+.hero-divider{
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.divider-bar{
+    width: 2.5rem;
+    height: 2px;
+    background-color: var(--signal);
+}
+
+.divider-line{
+    flex: 1;
+    height: 1px;
+    background-color: rgba(13, 13, 13, 0.1);
+}
+
+.divider-text{
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: rgba(13, 13, 13, 0.5);
+}
+
