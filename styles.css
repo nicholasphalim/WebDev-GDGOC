@@ -1,0 +1,8 @@
+:root {
+  --bone:        #F0EBE0;
+  --bone-dark:   #E0DACE;
+  --pitch:       #0D0D0D;
+  --signal:      #E85D04;
+  --signal-dark: #C44D00;
+  --font-mono:   "Space Mono", "JetBrains Mono", "Fira Code", "Courier New", monospace;
+}
