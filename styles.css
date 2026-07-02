@@ -228,7 +228,79 @@ body {
 
 .section-subtitle{
     font-size: 0.75rem;
+    font-weight: 500;
     letter-spacing: 0.5em;
     color: rgba(13, 13, 13, 0.25);
     margin-bottom: 4rem;
+}
+
+.columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid var(--pitch);
+    padding: 4rem;
+    gap: 4rem;
+}
+
+.col-contents{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-title span{
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    color: var(--signal);
+}
+
+.col-title{
+    border-bottom: 1px solid rgba(13, 13, 13, 0.2);
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+.col-cards{
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* Vibecoded the animation on skill cards */
+.skills-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(13, 13, 13, 0.4);
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+    /* base background then a left-to-right signal fill on hover */
+    background-image: linear-gradient(var(--signal), var(--signal)), linear-gradient(var(--bone), var(--bone));
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, left center;
+    background-size: 0% 100%, 100% 100%;
+    color: var(--pitch);
+}
+
+.nextjs{
+    font-weight: 700;
+    border-color: var(--signal);
+}
+.tailwind{
+    font-weight: 700;
+    border-color: var(--signal);
+}
+
+/* Fill that covers the whole .skills-info card from the left */
+.skills-fill{display:none}
+
+/* Keep content above the fill so text remains visible */
+.skills-info > * { position: relative; z-index: 1; }
+
+/* On hover, animate the background-size of the first gradient to the percentage */
+.skills-info:hover{
+    background-size: var(--percent, 0%) 100%, 100% 100%;
 }
